@@ -1,0 +1,136 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.cabecalho{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;  /* direcao dos itens na horizontal*/
+    flex-wrap: wrap;
+
+    width: 100%;                /* tem liberdade p/ mover os itens até tantos % da tela*/
+    height: 20%;
+    /*justify-content: center;    /* alinhamento horizontal*/
+    align-content: center;   /* alinhamento vertical*/
+   
+}
+
+.Logo{
+    width: 20%;
+    /* background-color: aquamarine; */
+    margin-left: 5%;
+    text-align: center;
+}
+.Logo h1{
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Logo h1:hover{
+    cursor: pointer;
+}
+
+.menu{
+    align-self: center;         /* cetraliza verticalmente a navbar dentro do cabecalho*/
+    margin-left: 25%;
+    width: 40%;
+}
+
+
+/* Configurando itens do menu igualmente espacados */
+.menu ul{
+    /* background-color: aquamarine; */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    cursor: normal;  /* faz com que o cursor somente mude em cima dos links */
+
+}
+
+.menu a{
+    color: #506269;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu a:hover{
+    color: #A5410F;
+    font-weight: bold;
+}
+
+
+.page{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    width: 40%;
+    /* background-color: antiquewhite; */
+    margin-left: 10%;
+}
+
+.info h2{
+    padding-top: 15%;
+    color: #506269;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.info h3{
+    color: #506269;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 5%;
+}
+
+
+.button{
+    width: 61%;
+    /*border-radius: 50%;                     /* Faz bordas curvadas*/
+    background-color: #A5410F;
+    
+    text-align: center; /* centralizar texto e aumentar espacamento interno das bordas*/
+    padding: 30px;
+
+     /* display: flex;   /* forma alternativa de justificar o texto*/
+    /*justify-content: center; */
+
+    /*margin: auto;               /* centraliza horizontal a caixa de texto*/
+    margin-top: 5%;             /* aumenta a margem superior */
+   
+}
+
+.button:hover{
+    cursor: pointer;  /* faz o cursor do mouse mudar ao entrar na area do botao*/
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    /* padding: 30px; */  /* o padding vai aqui se usar a centralizacao flex*/
+    
+}
+
+.photo{
+    width: 42.5%;
+    /* background-color: azure; */
+    margin-left: -5%;    /* somente pra alinhar em cima com o menu*/
+    background-image: url("digadiga.png");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: right;
+}
